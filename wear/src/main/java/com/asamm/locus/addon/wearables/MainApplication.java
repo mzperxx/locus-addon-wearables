@@ -3,7 +3,6 @@ package com.asamm.locus.addon.wearables;
 import android.app.Activity;
 import android.app.Application;
 import android.content.Intent;
-import android.support.wearable.activity.WearableActivity;
 import android.util.Log;
 
 import com.asamm.locus.addon.wearables.gui.CustomActivity;

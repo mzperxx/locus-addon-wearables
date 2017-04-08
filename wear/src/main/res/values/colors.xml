@@ -3,6 +3,11 @@
 
     <!-- COLORS -->
 
+    <color name="grey">#D3D3D3</color>
+    <color name="light_grey">#D3D3D3</color>
+    <color name="dark_grey">#D3D3D3</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
     <color name="base_primary">#1976d2</color>
     <color name="base_primaryDark">#0d47a1</color>
     <color name="base_accent">#0d47a1</color>

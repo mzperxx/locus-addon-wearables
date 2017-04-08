@@ -1,7 +1,6 @@
 package com.asamm.locus.addon.wearables;
 
 import android.os.Bundle;
-import android.support.annotation.NonNull;
 import android.util.Log;
 
 import com.asamm.locus.addon.wearables.gui.CustomActivity;

@@ -35,3 +35,6 @@ My test equipments:
 - Polar H7
 - On the pone:Locus Pro
 - The addon is compiled with locus-api-android:0.2.7
+
+Important links:
+- Locus API: https://github.com/asamm/locus-api

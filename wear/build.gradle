@@ -1,5 +1,35 @@
 apply plugin: 'com.android.application'
 
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.3.1'
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+    }
+}
+
+project.ext{
+    compileSdkVersion = 23
+    buildToolsVersion = '25.0.0'
+    signDebugPath = "./"
+    signDebugKeyPassword = "123"
+    signDebugPath = "123"
+    signDebugPassword ="123"
+    signDebugKeyAlias ="123"
+    signDebugKeyPassword ="123"
+    signReleasePath ="123"
+    signReleasePassword ="123"
+    signReleaseKeyAlias ="123"
+    signReleaseKeyPassword ="123"
+}
+
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
     buildToolsVersion rootProject.ext.buildToolsVersion
@@ -8,8 +38,8 @@ android {
         versionCode 2
         versionName "0.4"
 
-        minSdkVersion 23
-        targetSdkVersion 23
+        minSdkVersion rootProject.ext.compileSdkVersion
+        targetSdkVersion rootProject.ext.compileSdkVersion
 
         applicationId "com.asamm.locus.addon.wearables.mzperx"
 	jackOptions {
@@ -64,14 +94,14 @@ android {
 
 dependencies {
     // get locus API
-    compile project(':locus-api-android')
-    compile project(':locus-api')
-    //compile 'com.asamm:locus-api-android:0.2.7'
+    //compile project(':locus-api-android')
+    //compile project(':locus-api')
+    //compile 'com.asamm:locus-api-android:0.2.8'
 
     // add Google stuff
     compile 'com.google.android.support:wearable:1.4.0'
-    compile 'com.google.android.gms:play-services-wearable:10.2.0'
-    //compile 'com.google.android.gms:play-services-appindexing:10.2.0'
-    compile 'com.google.firebase:firebase-appindexing:10.2.0'
-    //compile 'com.android.support:support-v4:25.2.0'
+    compile 'com.google.android.gms:play-services-wearable:10.2.1'
+    //compile 'com.google.android.gms:play-services-appindexing:10.2.1'
+    compile 'com.google.firebase:firebase-appindexing:10.2.1'
+    compile 'com.android.support:support-v4:23.0.1'
 }
