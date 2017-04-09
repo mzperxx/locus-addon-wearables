@@ -17,7 +17,7 @@ import java.util.List;
 public abstract class ListItemAdapter<T> extends WearableListView.Adapter {
 
     // current context
-    private final Context mCtx;
+    //private final Context mCtx;
     // inflater for layout
     private final LayoutInflater mInflater;
     // items to display
@@ -28,7 +28,7 @@ public abstract class ListItemAdapter<T> extends WearableListView.Adapter {
      * @param ctx current context
      */
     public ListItemAdapter(Context ctx, List<T> items) {
-        this.mCtx = ctx;
+        //this.mCtx = ctx;
         this.mItems = items;
         this.mInflater = (LayoutInflater)
                 ctx.getSystemService(Context.LAYOUT_INFLATER_SERVICE);

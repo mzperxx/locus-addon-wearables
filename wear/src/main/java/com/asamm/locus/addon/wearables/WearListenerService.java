@@ -1,11 +1,6 @@
 package com.asamm.locus.addon.wearables;
 
-import android.util.Log;
-
-import com.google.android.gms.wearable.Channel;
-import com.google.android.gms.wearable.DataEventBuffer;
 import com.google.android.gms.wearable.MessageEvent;
-import com.google.android.gms.wearable.Node;
 import com.google.android.gms.wearable.WearableListenerService;
 
 /**
@@ -15,7 +10,7 @@ import com.google.android.gms.wearable.WearableListenerService;
 public class WearListenerService extends WearableListenerService {
 
     // tag for logger
-    private static final String TAG = WearListenerService.class.getSimpleName();
+    //private static final String TAG = WearListenerService.class.getSimpleName();
 
     @Override
     public void onMessageReceived(MessageEvent messageEvent) {

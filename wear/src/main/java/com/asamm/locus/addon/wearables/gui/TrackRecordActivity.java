@@ -67,7 +67,7 @@ public class TrackRecordActivity extends CustomActivity {
      */
     private GoogleApiClient client;
     private boolean m_isGridCreated = false;
-    private Point m_activePage = null;
+    //private Point m_activePage = null;
 
     @Override
     public void onExitAmbient() {
@@ -214,7 +214,7 @@ public class TrackRecordActivity extends CustomActivity {
                 getDeviceComm().getDataContainer().getTrackRecProfiles();
 
         // create adapter
-        ListItemAdapter adapter = new ListItemAdapter<ActionTools.TrackRecordProfileSimple>(this, profiles) {
+        ListItemAdapter<ActionTools.TrackRecordProfileSimple> adapter = new ListItemAdapter<ActionTools.TrackRecordProfileSimple>(this, profiles) {
 
             @Override
             public void setItemView(ActionTools.TrackRecordProfileSimple item, ListItemLayout layout) {

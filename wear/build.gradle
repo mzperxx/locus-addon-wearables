@@ -18,16 +18,20 @@ allprojects {
 project.ext{
     compileSdkVersion = 23
     buildToolsVersion = '25.0.0'
+    minSdkVersion = 23
+    targetSdkVersion = 23
     signDebugPath = "./"
     signDebugKeyPassword = "123"
-    signDebugPath = "123"
+    signDebugPath = "./"
     signDebugPassword ="123"
     signDebugKeyAlias ="123"
     signDebugKeyPassword ="123"
-    signReleasePath ="123"
+    signReleasePath ="./"
     signReleasePassword ="123"
     signReleaseKeyAlias ="123"
     signReleaseKeyPassword ="123"
+    apiCode =123
+    apiVersion ="123"
 }
 
 android {
@@ -48,6 +52,8 @@ android {
 
     }
 
+    compileOptions.encoding = 'windows-1251'
+
     packagingOptions {
         exclude 'META-INF/LICENSE.txt'
         exclude 'META-INF/NOTICE.txt'
@@ -67,17 +73,17 @@ android {
     // signing of versions
     signingConfigs {
         debug {
-            // "~/.android/debug.keystore"
+            /*// "~/.android/debug.keystore"
             storeFile file(rootProject.ext.signDebugPath)
             storePassword = rootProject.ext.signDebugPassword
             keyAlias = rootProject.ext.signDebugKeyAlias
-            keyPassword = rootProject.ext.signDebugKeyPassword
+            keyPassword = rootProject.ext.signDebugKeyPassword*/
         }
         release {
-            storeFile file(rootProject.ext.signReleasePath)
+            /*storeFile file(rootProject.ext.signReleasePath)
             storePassword = rootProject.ext.signReleasePassword
             keyAlias = rootProject.ext.signReleaseKeyAlias
-            keyPassword = rootProject.ext.signReleaseKeyPassword
+            keyPassword = rootProject.ext.signReleaseKeyPassword*/
         }
     }
 
@@ -93,10 +99,10 @@ android {
 }
 
 dependencies {
+
     // get locus API
-    //compile project(':locus-api-android')
-    //compile project(':locus-api')
-    //compile 'com.asamm:locus-api-android:0.2.8'
+    compile project(':locus-api')
+    compile project(':locus-api-android')
 
     // add Google stuff
     compile 'com.google.android.support:wearable:1.4.0'

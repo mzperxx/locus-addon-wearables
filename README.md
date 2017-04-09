@@ -17,7 +17,7 @@ alert if I left the pre-selected route,
 map where I can zoom in/out.
 
 What functionalities what I have added so far:
-- when track recoding is running there are 3 different screens. 
+- when track recoding is running there are 3 different screens.
 screen1: time elapsed, average speed, distance, cummulative altitude.
 screen2: actual hr, avg hr, max hr.
 screen3: control buttons (stop, pause, add waypoint) and the battery levels of the watch and the phone.
@@ -37,4 +37,9 @@ My test equipments:
 - The addon is compiled with locus-api-android:0.2.7
 
 Important links:
-- Locus API: https://github.com/asamm/locus-api
+- Locus API: https://github.com/asamm/locus-api/wiki/Adding-Locus-API-to-project
+
+My steps (Hadatko)
+- Open project -> As a project folder choose locus-addon-wearables/wear
+- Download https://github.com/asamm/locus-api.
+- Add locus-api as a modules: File/New/Import Module/. Insert path to locus-api default folder. Choose locus-api and locus-api-android. Unecheck locus-api-samples.

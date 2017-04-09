@@ -52,3 +52,6 @@ gradlew
 gradle/wrapper/gradle-wrapper.jar
 *.properties
 device/build.gradle
+
+wear/locus-api
+wear/locus-api-android*
