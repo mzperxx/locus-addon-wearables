@@ -55,3 +55,5 @@ device/build.gradle
 
 wear/locus-api
 wear/locus-api-android*
+device/locus-api
+device/locus-api-android*
