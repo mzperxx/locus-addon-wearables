@@ -3,5 +3,5 @@
 
     <!-- COLORS -->
 
-    <integer name="google_play_services_version">33</integer>
+    <integer name="google_play_services_version">10298000</integer>
 </resources>
