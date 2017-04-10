@@ -14,7 +14,7 @@ import com.asamm.locus.addon.wearables.R;
 public class InfoPanel {
 
     // main container
-    private LinearLayout mMain;
+    //private LinearLayout mMain;
     // text view for title
     private TextView mTvTitle;
     // title with description
@@ -23,7 +23,7 @@ public class InfoPanel {
     private ProgressBar mProgressBar;
 
     public InfoPanel(LinearLayout view) {
-        this.mMain = view;
+        //this.mMain = view;
 
         // get views
         mTvTitle = (TextView)

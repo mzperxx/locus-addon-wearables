@@ -1,13 +1,9 @@
 package com.asamm.locus.addon.wearables.gui;
 
 import android.content.Context;
-import android.content.Intent;
-import android.content.IntentFilter;
 import android.content.SharedPreferences;
-import android.graphics.Color;
 import android.graphics.Point;
 import android.net.Uri;
-import android.os.BatteryManager;
 import android.os.Bundle;
 import android.os.Handler;
 import android.preference.PreferenceManager;
@@ -16,14 +12,12 @@ import android.support.wearable.view.DotsPageIndicator;
 import android.support.wearable.view.GridPagerAdapter;
 import android.support.wearable.view.GridViewPager;
 import android.support.wearable.view.WearableListView;
-import android.text.Layout;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.asamm.locus.addon.wearables.R;
@@ -34,8 +28,6 @@ import com.google.android.gms.appindexing.Action;
 import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.appindexing.Thing;
 import com.google.android.gms.common.api.GoogleApiClient;
-
-import org.w3c.dom.Text;
 
 import java.text.SimpleDateFormat;
 import java.util.List;
@@ -75,7 +67,7 @@ public class TrackRecordActivity extends CustomActivity {
      */
     private GoogleApiClient client;
     private boolean m_isGridCreated = false;
-    private Point m_activePage = null;
+    //private Point m_activePage = null;
 
     @Override
     public void onExitAmbient() {
@@ -222,7 +214,7 @@ public class TrackRecordActivity extends CustomActivity {
                 getDeviceComm().getDataContainer().getTrackRecProfiles();
 
         // create adapter
-        ListItemAdapter adapter = new ListItemAdapter<ActionTools.TrackRecordProfileSimple>(this, profiles) {
+        ListItemAdapter<ActionTools.TrackRecordProfileSimple> adapter = new ListItemAdapter<ActionTools.TrackRecordProfileSimple>(this, profiles) {
 
             @Override
             public void setItemView(ActionTools.TrackRecordProfileSimple item, ListItemLayout layout) {

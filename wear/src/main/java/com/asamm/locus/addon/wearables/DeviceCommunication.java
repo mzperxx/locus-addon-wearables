@@ -402,8 +402,8 @@ public class DeviceCommunication implements
         path += 0.0 + "/" + 0.0 + "/";
         if (act != null)
             path += ((MapActivity) act).zoomLevel + "/";
-        else
-            path += getLastUpdate().getMapZoomLevel() + "/";
+        /*else
+            path += getLastUpdate().getMapZoomLevel() + "/";*/
 
         path += (width * 2) + "/" + (height * 2) + "/";
 

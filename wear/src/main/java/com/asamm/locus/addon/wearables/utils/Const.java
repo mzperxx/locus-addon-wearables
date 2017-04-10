@@ -9,12 +9,12 @@ public class Const {
 	// minimal version code of Locus
 	public static final int LOCUS_VERSION_CODE = 409;
 
-	// scheme for intent filter
+	/*// scheme for intent filter
 	private static final String PATH_SCHEME = "wear";
 	// host for intent filter
 	private static final String PATH_HOST = "locus_map";
 	// path prefix for intent filter
-	private static final String PATH_PREFIX = "/wearable";
+	private static final String PATH_PREFIX = "/wearable";*/
 	// completed base path
 //	private static final String BASE_PATH =
 //			PATH_SCHEME + "://" + PATH_HOST + PATH_PREFIX;

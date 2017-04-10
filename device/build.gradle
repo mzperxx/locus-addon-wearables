@@ -1,5 +1,39 @@
 apply plugin: 'com.android.application'
 
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.3.1'
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+    }
+}
+
+project.ext{
+    compileSdkVersion = 23
+    buildToolsVersion = '25.0.0'
+    minSdkVersion = 23
+    targetSdkVersion = 23
+    signDebugPath = "./"
+    signDebugKeyPassword = "123"
+    signDebugPath = "./"
+    signDebugPassword ="123"
+    signDebugKeyAlias ="123"
+    signDebugKeyPassword ="123"
+    signReleasePath ="./"
+    signReleasePassword ="123"
+    signReleaseKeyAlias ="123"
+    signReleaseKeyPassword ="123"
+    apiCode =123
+    apiVersion ="123"
+}
+
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
     buildToolsVersion rootProject.ext.buildToolsVersion
@@ -8,8 +42,8 @@ android {
         versionCode 3
         versionName "0.3"
 
-        minSdkVersion 20
-        targetSdkVersion 23
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
 
         applicationId "com.asamm.locus.addon.wearables.mzperx"
 	jackOptions {
@@ -25,6 +59,7 @@ android {
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
+        encoding 'windows-1251'
     }
 
     // set lint in project
@@ -37,16 +72,16 @@ android {
     signingConfigs {
         debug {
             // "~/.android/debug.keystore"
-            storeFile file(rootProject.ext.signDebugPath)
+            /*storeFile file(rootProject.ext.signDebugPath)
             storePassword = rootProject.ext.signDebugPassword
             keyAlias = rootProject.ext.signDebugKeyAlias
-            keyPassword = rootProject.ext.signDebugKeyPassword
+            keyPassword = rootProject.ext.signDebugKeyPassword*/
         }
         release {
-            storeFile file(rootProject.ext.signReleasePath)
+            /*storeFile file(rootProject.ext.signReleasePath)
             storePassword = rootProject.ext.signReleasePassword
             keyAlias = rootProject.ext.signReleaseKeyAlias
-            keyPassword = rootProject.ext.signReleaseKeyPassword
+            keyPassword = rootProject.ext.signReleaseKeyPassword*/
         }
     }
 
@@ -65,15 +100,12 @@ dependencies {
     // get locus API
     //compile 'com.asamm:locus-api-android:0.2.7'
     compile project(':locus-api-android')
-
     // attach wear container
-    wearApp project(':wear')
-
+    //wearApp project(':wear')
     // add google features
     compile 'com.google.android.support:wearable:1.4.0'
-    compile 'com.google.android.gms:play-services-wearable:10.2.0'
+    compile 'com.google.android.gms:play-services-wearable:10.2.1'
     provided 'com.google.android.wearable:wearable:1.0.0'
-
     //compile 'com.google.android.gms:play-services:9.6.0@aar'
     //compile 'com.android.support:support-v4:24.2.1'
 }

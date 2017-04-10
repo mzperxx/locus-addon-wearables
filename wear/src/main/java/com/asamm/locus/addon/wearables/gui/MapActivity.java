@@ -4,7 +4,6 @@ import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
-import android.util.Log;
 import android.view.Gravity;
 import android.view.MotionEvent;
 import android.view.View;
@@ -16,15 +15,10 @@ import android.widget.TextView;
 import com.asamm.locus.addon.wearables.R;
 import com.asamm.locus.addon.wearables.utils.DataContainer;
 
-import org.w3c.dom.Text;
-
 import locus.api.android.features.periodicUpdates.UpdateContainer;
 import locus.api.android.utils.LocusInfo;
 import locus.api.android.utils.UtilsFormat;
-
 import locus.api.objects.enums.PointRteAction;
-import locus.api.objects.extra.ExtraData;
-import locus.api.utils.Logger;
 
 /**
  * Created by menion on 16/08/15.
