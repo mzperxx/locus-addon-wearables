@@ -37,6 +37,7 @@ My test equipments:
 - The addon is compiled with locus-api-android:0.2.7
 
 Important links:
+- Community forum: http://help.locusmap.eu/topic/android-wear-support
 - Locus API: https://github.com/asamm/locus-api/wiki/Adding-Locus-API-to-project
 
 My steps (Hadatko)
